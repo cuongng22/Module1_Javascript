@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {padding-top:50px; padding-left: 50px;}
+    </style>
+</head>
+<body>
+<input type="text" id="idinput">
+<input type="button" value="Add" onclick="add123()" >
+<input type="button" value="Display" onclick="Display123()">
+<p id="cailol"></p>
+<script>
+    let array= new Array();
+    let x = 0;
+function add123() {
+    array[x] = document.getElementById("idinput").value;
+    alert("Element: " + array[x] + " Added at index " + x);
+    x++;
+    document.getElementById("idinput").value = "";
+}
+function Display123() {
+    let e = "<hr/>";
+    for (let i = 0; i < array.length; i++) {
+        e += "Element " + i + " = " + array[i] + "<br/>";
+    }
+    document.getElementById("cailol").innerHTML = e;
+}
+
+</script>
+</body>
+</html>
