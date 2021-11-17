@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let mang1=[];
+let mang2=[];
+for (let i = 0; i < 10; i++) {
+    let phantu1=+prompt("nhap vao so thu "+ (i+1) +" cua mang 1")
+    mang1.push(phantu1)
+}
+for (let j = 0; j < 10; j++) {
+    let phantu2=+prompt("nhap vao so thu "+ (j+1)+ " cua mang 2")
+    mang2.push(phantu2)
+}
+let mang3= gopmang;
+let gopmang=mang3.concat(mang1,mang2)
+document.write(gopmang)
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+      <title>Title</title>
+</head>
+<body>
+<script>
+    let sophantu=+prompt("so phan tu la ?")
+    let num= []
+    for (i=0; i<sophantu;i++) {
+        let phantu=+prompt("nhap vao phan tu thu "+ (i+1))
+        num.push(phantu)
+    }
+    let cak
+    for (i=0; i<num.length;i++) {
+        for(j=0;j<num.length;j++) {
+            if (num[i]>num[j]) {
+                cak=num[i];
+                num[i]=num[j];
+                num[j]=cak;
+            }
+        }
+    }
+    document.write(num)
+</script>
+</body>
+</html>
