@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhapvao">
+<button onclick="display()" type="button">Dịch</button>
+<h1 id="dichra"></h1>
+<script>
+    function display() {
+        let VN = ['con chó', 'con mèo']
+        let Eng = ['dog', 'cat']
+        let result
+        let i = 0
+        let tukhoa = document.getElementById("nhapvao").value
+        for (; i < VN.length; i++) {
+            if (tukhoa === VN[i]) {
+                result = Eng[i]
+                document.getElementById("dichra").innerHTML = result
+            }
+            if (tukhoa === Eng[i]) {
+                result = VN[i]
+                document.getElementById("dichra").innerHTML = result
+            }
+            // if (tukhoa!==VN[i]&&tukhoa!==Eng[i]) {
+            //     document.getElementById('dichra').innerHTML = "Không tìm thấy từ này"
+            // }
+        }
+    }
+</script>
+</body>
+</html>
