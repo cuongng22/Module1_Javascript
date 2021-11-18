@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr1=[12,323,6435,987,756,-423,324]
+  let min=arr1[0]
+  function timmin(arr) {
+    for (i=1;i<arr1.length;i++) {
+      if(min>arr1[i]) {
+        min=arr1[i]
+      }
+    }
+    return min;
+  }
+
+  let result=timmin(arr1)
+  alert(result)
+</script>
+</body>
+</html>
