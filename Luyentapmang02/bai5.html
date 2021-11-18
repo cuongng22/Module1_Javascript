@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num1=parseInt(prompt("số phần tử của mảng 1 là?"))
+    let arr1=[]
+    let result
+    for (i=0;i<num1;i++) {
+        let phantu1=prompt("nhap vao cac phan tu mang1")
+        arr1.push(phantu1)
+    }
+    let num2=parseInt(prompt("số phần tử của mảng 2 là?"))
+    let arr2=[]
+    for (j=0;j<num1;j++) {
+        let phantu2=prompt("nhap vao cac phan tu mang2")
+        arr2.push(phantu2)
+    }
+    if (num1===num2) {
+        for (k=0;k<num1;k++) {
+            if (arr1[k]!==arr2[k]) {
+                result=1
+            }
+        }
+        if(result==1) {
+            alert("2 mang khac nhau")
+        } else {
+            alert("2 mang giong nhau")
+        }
+    } else {
+        alert("2 mang khac nhau")
+    }
+
+
+</script>
+</body>
+</html>

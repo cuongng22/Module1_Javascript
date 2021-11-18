@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = 'dcmkm4m3j2mjas3';
+    let chars = str.split("");
+    let count = 0;
+    for (let i = 0; i < chars.length; i++) {
+        if (+chars[i] >= 0){
+            count += 1
+        }
+    } document.write("số từ trong mảng là " + (chars.length-count))
+</script>
+</body>
+</html>

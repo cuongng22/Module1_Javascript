@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+      <title>Title</title>
+</head>
+<body>
+<script>
+  let arr='23j23j24j4jjn23'
+  let arr1=arr.split("");
+  let count=0;
+  for (let i = 0; i < arr1.length; i++) {
+    if (isNaN(arr1[i])) {
+      count++
+    }
+  }
+  document.write("số ký tự số trong mảng là "+ (arr1.length-count))
+</script>
+</body>
+</html>
