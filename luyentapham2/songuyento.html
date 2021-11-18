@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let stt = true
+    function isPrime(number) {
+        if (number<2) {
+            stt=false
+        }
+        for (let i=2;i<=Math.sqrt(number);i++) {
+            if (number%i===0) {
+                stt=false
+                break
+            }
+        }
+        return stt
+    }
+    let result=isPrime(parseInt(prompt("nhap vao so do")))
+    alert(result)
+
+</script>
+</body>
+</html>
