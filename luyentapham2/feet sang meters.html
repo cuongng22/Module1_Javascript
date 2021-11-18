@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+  <p>
+    <h3>Feet</h3> <input type="number" oninput="input1()" id="concak" placeholder="Nhập feet">
+  </p>
+  <p>
+  <h3>Meters :</h3><span oninput="input1()" id="cak"></span>
+  </p>
+</form>
+<script>
+  function input1() {
+    let num=document.getElementById("concak").value
+    document.getElementById("cak").innerHTML=num*0.305
+  }
+</script>
+<form>
+  <p>
+  <h3>Feet</h3> <input type="number" oninput="input2()" id="concak1" placeholder="Nhập feet">
+  </p>
+  <p>
+  <h3>Meters :</h3><span oninput="input2()" id="cak1"></span>
+  </p>
+</form>
+<script>
+  function input2() {
+    let num=document.getElementById("concak1").value
+    document.getElementById("cak1").innerHTML=num*3.279
+  }
+</script>
+</body>
+</html>
