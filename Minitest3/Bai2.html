@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soPt=+prompt("n=? ")
+    let arr=[]
+    let count=0
+    for (let i = 0; i < soPt; i++) {
+        let phanTu=+prompt("Nhập vào phần tử thứ "+(i+1))
+        arr.push(phanTu)
+    }
+    let phanTua=prompt("Nhập vào phần tử a")
+    for (j=0;j<arr.length;j++) {
+        if (arr[j]==phanTua) {
+            count+=1
+        }
+    }
+    alert(count)
+    alert(typeof phanTua)
+
+</script>
+</body>
+</html>

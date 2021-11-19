@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soPt=+prompt("Số phần tử của mảng là ? ")
+    let arr=[]
+    let count=0
+    for (let i = 0; i < soPt; i++) {
+        let phanTu=+prompt("Nhập vào phần tử thứ "+(i+1))
+        arr.push(phanTu)
+    }
+    for (j=0;j<arr.length;j++) {
+        if (arr[j]%3===0) {
+            count+=1
+        }
+    }
+    if(count!==0) {
+        alert("số các số chia hết cho 3 trong mảng là "+count)
+    } else {
+        alert("Không có số nào chia hết cho 3")
+    }
+</script>
+</body>
+</html>

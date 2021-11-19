@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="result1"></h1>
+<i><p id="result2"></p></i>
+<b><p id="result3"></p></b>
+<script>
+    let soPt=+prompt("số phần tử của mảng là? ")
+    let arr=[]
+    let count1=0
+    let count2=0
+    let count3=0
+    for (let i = 0; i < soPt; i++) {
+        let phanTu=+prompt("Nhập vào phần tử thứ "+(i+1))
+        arr.push(phanTu)
+    }
+    for (j=0;j<arr.length;j++) {
+        if (arr[j]%3===0){
+            count1+=1
+        }
+        if (arr[j]%5===0) {
+            count2+=1
+        }
+        if (arr[j]%3!==0||arr[j]%5!==0) {
+            count3+=1
+        }
+    }
+    if (count1>count2&&count1>count3) {
+        document.getElementById("result1").innerHTML="C1021H1"
+    } else if (count2>count3) {
+        document.getElementById("result2").innerHTML="Hello world"
+    } else {
+        document.getElementById("result3").innerHTML="Codegym"
+    }
+</script>
+</body>
+</html>

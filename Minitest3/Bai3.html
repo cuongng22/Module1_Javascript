@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soPt=+prompt("Số phần tử của mảng là ? ")
+    let arr=[]
+    let arr1=[]
+    let sum=0
+    let check=true
+    for (let i = 0; i < soPt; i++) {
+        let phanTu=+prompt("Nhập vào phần tử thứ "+(i+1))
+        arr.push(phanTu)
+    }
+    for (l=0;l<arr.length;l++) {
+        if (arr[l]<2||arr[l]>=200) {
+            arr1=arr.slice(l,1)
+        }
+    }
+    for (j=0;j<arr1.length;j++) {
+        for (k=2;k<Math.sqrt(arr[j]);k++) {
+            if (arr1[j]%k===0) {
+                check=false
+            }
+            if (check) {
+                sum=sum+arr1[j]
+            }
+        }
+    }
+    alert(sum)
+</script>
+</body>
+</html>
