@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let arr=[]
+let sophantu=+prompt("so phan tu la bao nhieu")
+function haiSo(arr) {
+    for (i = 0; i < sophantu; i++) {
+        let phanTu = +prompt("nhap vao so thu " + (i + 1))
+        arr.push(phanTu)
+    }
+    return arr.reverse()
+}
+let result=haiSo(arr)
+alert(result)
+</script>
+</body>
+</html>
