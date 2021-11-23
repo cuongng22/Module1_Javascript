@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="canvas" width="800" height="500" style="border: 1px solid black" ></canvas>
+<script>
+    class Circle   {
+        radius
+        color
+
+        constructor(radius,color) {
+            this.radius=radius
+            this.color=color
+        }
+        getRadius() {
+            return this.radius
+        }
+        setRadius (radius) {
+            this.radius=radius
+        }
+        area () {
+            return this.radius**2*Math.PI
+        }
+       draw(ctx) {
+            ctx.beginPath()
+           ctx.fillStyle=this.color
+           ctx.arc(100,100,this.radius,0,Math.PI*2)
+           ctx.fill()
+           ctx.closePath()
+       }
+        }
+        let cir=new Circle(100, "red")
+    let ctx=document.getElementById("canvas").getContext("2d")
+    cir.draw(ctx)
+    alert('diện tích là '+ cir.area())
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="300" height="300" style="border: 1px solid #000000"></canvas>
+<script>
+    class Rectangle {
+        width
+        height
+        color
+
+        constructor(width, height) {
+            this.width = width
+            this.height = height
+        }
+
+        chuVi() {
+            return (this.height + this.width) * 2
+        }
+
+        area() {
+            return (this.height * this.width)
+        }
+        setWith(ec) {
+            this.width=ec
+        }
+        setHeight(ac) {
+            this.height=ac
+        }
+
+        draw() {
+            let canvas = document.getElementById("myCanvas");
+            if (canvas.getContext) {
+                let ctx = canvas.getContext('2d');
+                ctx.fillStyle = '#fa4b2a';
+                ctx.fillRect(10, 40, this.width, this.height);
+            }
+        }
+    }
+    let rec=new Rectangle(10,10)
+    alert(rec.chuVi())
+    alert(rec.area())
+    rec.draw()
+    rec.setWith(50)
+    rec.setHeight(50)
+    alert(rec.chuVi())
+    rec.draw()
+</script>
+</body>
+</html>

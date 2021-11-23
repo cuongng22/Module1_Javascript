@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="number" id="input1">
+    <input type="number" id="input2">
+    <p> <button onclick="myFunction1()" type="button">cộng</button>
+        <button onclick="myFunction2()" type="button">trừ</button>
+        <button onclick="myFunction3()" type="button">nhân</button>
+        <button onclick="myFunction4()" type="button">chia</button></p>
+     <h3 id="result">Result:</h3>
+</form>
+<script>
+    function myFunction1() {
+        let num1=document.getElementById("input1").value
+        let num2=document.getElementById("input2").value
+        document.getElementById("result").innerHTML="Result: "+ num1+num2
+    }
+    function myFunction2() {
+        let num1=document.getElementById("input1").value
+        let num2=document.getElementById("input2").value
+        document.getElementById("result").innerHTML="Result: "+num1-num2
+    }
+    function myFunction3() {
+        let num1=document.getElementById("input1").value
+        let num2=document.getElementById("input2").value
+        document.getElementById("result").innerHTML="Result: "+num1*num2
+    }
+    function myFunction4() {
+        let num1=document.getElementById("input1").value
+        let num2=document.getElementById("input2").value
+        document.getElementById("result").innerHTML= "Result: "+num1/num2
+    }
+</script>
+</body>
+</html>

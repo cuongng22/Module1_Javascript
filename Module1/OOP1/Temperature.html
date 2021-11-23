@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  class Teamperature {
+      celcius
+      constructor(celcius) {
+          this.celcius=celcius
+      }
+      getCelcius() {
+          return this.celcius
+      }
+      changeK() {
+          return (this.celcius+273)
+      }
+      changeF() {
+          return (this.celcius*1.8+32)
+      }
+  }
+  let Teamperature1=new Teamperature(+(prompt("Celcious??")))
+  let celcius2=Teamperature1.getCelcius()
+  if (celcius2>-273) {
+      alert("độ k= "+Teamperature1.changeK()+"và"+"độ F= "+Teamperature1.changeF())
+  }
+</script>
+</body>
+</html>
